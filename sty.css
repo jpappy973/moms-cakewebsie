@@ -1,0 +1,588 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f6dfeb;
+}
+
+a:link, a:visited {
+  color: #151515;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+  color: #151515;
+}
+
+hr {
+  margin: 0 auto;
+  border:none;
+  border-top:7px dotted  #7868e6;
+  width: 8%;
+}
+
+/*--------------------title-----------------------------------*/
+.t1 {
+  font-family: 'Lora', serif;
+  padding-top: 60px;
+  text-align: center;
+  line-height: 20px;
+  width: auto;
+  font-size: 20px;
+}
+
+.t2 {
+  font-family: 'Lora', serif;
+  text-align: center;
+
+  width: auto;
+
+  font-size: 50px;
+}
+
+.t3 {
+  font-family:'Lora', serif;
+  font-size: 30;
+  text-align: center;
+}
+
+#title1 {
+  background-color: #dbdbd9;
+}
+
+/*
+--------------------------------
+-----------navbar---------------
+--------------------------------
+*/
+
+.navbar {
+  font-family: 'Trirong', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbd9;
+  color: white;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  /* padding-right: 10rem;*/
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+}
+
+.nav-links li a:hover {
+  /* background-color: #c4c4c4; */
+  color: white;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#hpimg img {
+  width: 350px;
+  height: 300px;
+}
+
+
+
+/* -------------------------------------------
+------------------img slider------------------
+----------------------------------------------
+*/
+
+.slider {
+  position: relative;
+  text-align: center;
+}
+
+.myslider {
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.myslider img{
+  /* display: block; */
+  position: relative;
+  border: 1px solid #b67162;
+  height: 400px;
+  width: 600px;
+  /* left:545px; */
+ 
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: black;
+  transition: 0.1s;
+  user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  color: blue;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left:0;
+}
+
+.dotbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50);
+  bottom: 20px;
+  cursor: pointer;
+  align-content: center;
+}
+
+/* .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+} */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:1.5s;
+  animation-name: fade;
+  animation-duration:1.5s; 
+}
+
+@-webkit-keyframes fade{
+  from {opacity: 0.8}
+  to{opacity: 1}
+}
+
+@keyframes fade{
+  from {opacity: 0.8}
+  to{opacity: 1}
+}
+
+img {
+  transform:scale(1,1);
+  -webkit-animation-name: zoomin;
+  animation-duration:40s; 
+  animation-name: zoomin;
+  animation-duration:40s;
+}
+
+@-webkit-keyframes zoomin {
+  from{transform: scale(1,1);}
+  to{transform: scale(1,1);}
+}
+
+@keyframes zoomin {
+  from{transform: scale(1,1);}
+  to{transform: scale(1,1);}
+}
+
+.tb1 {
+  width:100%;
+}
+
+/* -----------------------------------
+--------------recently added pictures-------------
+--------------------------------------------------
+*/
+
+.recentlyAddedImg{
+  font-size:20px;
+  font-family: 'Lobster', cursive;
+  position: relative;
+  text-align: center;
+  padding-top:40px;
+}
+
+
+.recentlyAddedImg img{
+  border: 1px solid #b67162;
+  height: 300px;
+  width: 350px;
+}
+
+.recentlyAddedImg .firstRow{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top:40px ;
+  padding-bottom:60px ;
+
+}
+
+.recentlyAddedImg .scondeRow{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+
+}
+
+
+/* -------------------------------------------------------------
+-----------------contact at the bottom of page------------------
+---------------------------------------------------------------- */
+
+.contact {
+  text-align: center;
+  position: relative;
+  background-color: #e4bad4;
+  height: 80px;
+  top: 100px;
+  padding-bottom:130px ;
+  
+}
+
+.contact img {
+  position: relative;
+  width: 40px;
+  top: 30px;
+  margin: 0 30px 0 0;
+  right: 20px;
+  
+  
+}
+
+.contact p {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  
+
+}
+
+.contact .contactInfo{
+  display: inline;
+  font-size: 23px;
+  position: absolute;
+  left:20px;
+  
+}
+
+.contact .contactInfo img{
+  position: relative;
+  margin: 0 15px 0 0;
+  top: 20px;
+  left: 10px;
+}
+
+
+.contact .FollowUsLink  {
+  width: 200px;
+  position:absolute;
+  /* margin: 0 5px 0 0; */
+  right: 10px;
+}
+
+.contact .FollowUsLink img {
+  margin: 0 15px 0 0;
+  display:inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.contact .FollowUsLink p{
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+
+  right:30px;
+}
+
+.contact .navBarInContact  {
+  font-size:25px;
+  
+}
+
+.contact .navBarInContact a:hover{
+  color: #f39189;
+}
+
+/*
+--------------------------------
+-----------cakesPages----------- 
+--------------------------------
+ */
+.cakeImg{
+
+  text-align: center;
+  margin-top:15rem;
+}
+
+.cakeImg img {
+ 
+  border: 2px solid #e4fbff;
+  height: 18.75rem;
+  width: 23.12rem;
+}
+
+.cakeImg h1 {
+  position: relative;
+  font-family: 'Arvo', serif;
+  font-size:4rem;
+  margin-bottom:3.75rem;
+  font-weight: normal;
+  bottom:8rem;
+}
+
+.cakeImg .row1 {
+  margin-bottom:7rem;
+}
+
+.cakeImg .row1 img{
+  margin-left:6rem;
+    
+}
+
+.cakeImg .row2 {
+  margin-bottom:7rem;
+}
+
+.cakeImg .row2 img{
+  margin-left:6rem;
+}
+
+.cakeImg .row3 {
+  margin-top:7rem ;
+  margin-bottom:7rem;
+}
+
+.cakeImg .row3 img{
+  margin-left:6rem;
+}
+
+.cakeImg .row4 {
+  margin-bottom:7rem;
+}
+
+.cakeImg .row4 img{
+  margin-left:6rem;
+}
+
+.cakeImg .row5 {
+  margin-top:7rem ;
+  margin-bottom:7rem;
+}
+
+.cakeImg .row5 img{
+  margin-left:6rem;
+}
+
+.cakeImg .row6 {
+  margin-bottom:7rem;
+}
+
+.cakeImg .row6 img{
+  margin-left:6rem;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------
+   _________moblie---------------
+ */
+
+@media (max-width: 430px) {
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #d2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbd9;
+    color: black;
+    
+  }
+
+  /* #title1 {
+    align-content: center;
+  } */
+
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    padding-right: 50px;
+    display: flex;
+  }
+  #d2 #title1.active {
+    display: none;
+  }
+
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .prev,
+  .next {
+  font-size:40px;
+}
+
+  
+
+  .myslider img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    
+  }
+
+
+  .recentlyAddedImg .firstRow img{
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .recentlyAddedImg .firstRow .img1{
+    position: absolute;
+    top: 440px;
+  }
+
+  .recentlyAddedImg .firstRow .img3{
+    position: absolute;
+    top: 760px;
+  }
+
+  .recentlyAddedImg .scondeRow img{
+    overflow: hidden;
+    position: relative;
+    /* display: none; */
+    top:600px; 
+  }
+
+  .recentlyAddedImg .scondeRow .img4{
+    position: absolute;
+    top:1400px;
+  }
+
+  .recentlyAddedImg .scondeRow .img5{
+    position: absolute;
+    top:1720px;
+  }
+
+  .contact{
+    text-align: center;
+    position: relative;
+    top:1250px;
+    padding-bottom:270px ;
+  }
+
+
+  .contact .contactInfo {
+    position: relative;
+    left :2px;
+  }
+
+  .contact .contactInfo  p{
+    padding-left: 29px;
+  }
+
+  .contact .navBarInContact{
+    position: absolute;
+    top:150px;
+    right: 147px;
+
+  }
+
+  .contact .navBarInContact li{
+    list-style: none;
+  }
+
+  .contact .FollowUsLink {
+    /* display: none; */
+   position:relative;
+   top:30px;
+   left: 22%;
+  }
+
+  .contact .FollowUsLink p{
+    /* display: none; */
+    padding-left: 60px;
+  }
+
+  .cakeImg {
+    /* overflow: hidden; */
+    position: relative;
+    right: 5.8rem;
+  }
+
+  .cakeImg h1{
+    font-size: 50px ;
+    position: relative;
+    left:6rem;
+    
+  }
+  hr {
+    width: 5rem;
+    position: relative;
+    left: 6rem;
+  }
+
+
+}
+
+/* @media screen {
+
+} */
