@@ -361,8 +361,8 @@ hr {
   
   .recentlyAddedImg .row img{
     margin-bottom:2rem ;
-    height: 293px;
-    width: 293px;
+    height: 20rem;
+    width: 20rem;
   }
 
   .rrow{
@@ -398,8 +398,8 @@ hr {
   }
 
   .cakepageimg .imgr img{
-    height: 293;
-    width: 293px;
+    height: 25rem;
+    width: 25rem;
     margin-bottom: 2rem ;
     /* position: relative;
     left:3.5rem; */
