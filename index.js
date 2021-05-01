@@ -17,6 +17,10 @@ const pauseButton3 = document.getElementById("playicon2");
 
 let numOfTimesPlayed= 0;
 
+for(var i=0;i < playButton1.length;i++){
+    playButton1[i].pause();
+    console.log(playButton1[i])
+}
 
 
 playButton1[0].addEventListener("click",()=>{
