@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Lobster+Two&family=Secular+One&display=swap');
 
 * {
@@ -221,9 +220,9 @@ hr {
 }
 
 /*
---------------------------------
------------cakesPages----------- 
---------------------------------
+-------------------------------------------
+-----------most pages not mobile----------- 
+-------------------------------------------
  */
 
  .cakepageimg{
@@ -244,17 +243,39 @@ hr {
 }
 
 .cakepageimg .imgr {
-  margin-left:10%;
+  text-align: center;
+  margin-left:4rem;
   width:350px;
   padding:0;
 }
 
 .cakepageimg .imgr img {
-  height: 230px;
+  height: 320px;
   width: 350px;
   border-radius:10px ;
   position: relative;
   margin-bottom:4rem ;
+}
+
+.none {
+  font-size: 0;
+}
+
+.cakepageimg .imgr video {
+    width:22rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius:10px ;
+    
+    
+}
+
+.imgr .playiconstyle{
+  position: relative;
+  bottom: 13rem;
+  font-size: 5rem;
+  color: rgba( 0,0,0,80%);
+  z-index:4;
 }
 
 
@@ -266,6 +287,7 @@ hr {
  */
 
 @media (max-width: 1000px) {
+
 
 hr {
   width: 5rem;
@@ -371,10 +393,11 @@ hr {
   ---------------------------
   */
   .cakepageimg{
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     width: 100%; 
     padding: 0;
+    margin: 0;
   }
 
   .cakepageimg .Aptitle h1{
@@ -384,17 +407,26 @@ hr {
   }
 
 
-   .cakepageimg .imgr{
+  .cakepageimg .imgr{
     padding: 0;
-    margin-right:auto
+    margin: 0;
+    width: 100%;
+    
   } 
 
   .cakepageimg .imgr img{
     height: 25rem;
-    width: 95%;
+    /* width: 95%; */
     margin-left:auto;
     margin-right:auto;
   
+  }
+
+  .cakepageimg .imgr video {
+    height: 25rem;
+    /* width: 95%; */
+    /* margin-left:auto;
+    margin-right:auto; */
   }
 
 
