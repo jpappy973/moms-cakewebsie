@@ -5,6 +5,10 @@ const PlayButton = document.getElementById("playicon3");
 const playButton1 = document.getElementById("playicon4");
 const playButton2 = document.getElementById("playicon5");
 
+for(var i=0;i < CateringVid.length;i++){
+    CateringVid[i].pause();
+    console.log(CateringVid[i])
+}
 
 CateringVid[0].addEventListener("click",()=>{ 
     numOfTimesPlayed++;
