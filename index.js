@@ -8,19 +8,20 @@ const pauseButton2 = document.getElementById("playicon1");
 
 const pauseButton3 = document.getElementById("playicon2");
 
+const img4Vid = document.querySelectorAll(".cakeVidImg");
 
 
-
-
-// const pauseButton4 = document.getElementById("playicon3");
 
 
 let numOfTimesPlayed= 0;
 
-for(var i=0;i < playButton1.length;i++){
-    playButton1[i].pause();
-    console.log(playButton1[i])
-}
+
+
+img4Vid[0].addEventListener("click",()=>{
+    numOfTimesPlayed++;
+    removeClass(img4Vid[0],playButton1[0]);
+    playVid(playButton1[0],pauseButton3);
+})
 
 
 playButton1[0].addEventListener("click",()=>{
@@ -28,11 +29,24 @@ playButton1[0].addEventListener("click",()=>{
     playVid(playButton1[0],pauseButton3);
 });
 
+img4Vid[1].addEventListener("click",()=>{
+    numOfTimesPlayed++;
+    removeClass(img4Vid[1],playButton1[1]);
+    playVid(playButton1[1],pauseButton);
+})
+
+
 playButton1[1].addEventListener("click",()=>{
     numOfTimesPlayed += 1;
     playVid(playButton1[1],pauseButton);
     
 });
+
+img4Vid[2].addEventListener("click",()=>{
+    numOfTimesPlayed++;
+    removeClass(img4Vid[2],playButton1[2]);
+    playVid(playButton1[2],pauseButton2);
+})
 
 playButton1[2].addEventListener("click",()=>{
     numOfTimesPlayed += 1;
@@ -40,14 +54,13 @@ playButton1[2].addEventListener("click",()=>{
     
 });
 
-// cateringVid.addEventListener("click",()=>{
-//     numOfTimesPlayed += 1;
-//     playVid(cateringVid1[0],pauseButton4);
-    
-// });
 
 
 
+function removeClass (img,vid){
+    img.classList.add("none");
+    vid.classList.remove("none");
+}
 
 
 
@@ -71,6 +84,3 @@ function playVid(vidToPlay,idOfpauseButton){
     
     
 }
-
-
-
