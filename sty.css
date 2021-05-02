@@ -258,6 +258,7 @@ hr {
 }
 
 .none {
+  display: none;
   font-size: 0;
 }
 
