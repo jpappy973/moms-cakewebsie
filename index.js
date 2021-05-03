@@ -75,8 +75,7 @@ function playVid(vidToPlay,idOfpauseButton){
     }
 
     if(numOfTimesPlayed >= 2){
-        idOfpauseButton.classList.remove("none");
-        idOfpauseButton.classList.add("playiconstyle");
+        
         vidToPlay.pause();
         numOfTimesPlayed=0;
         
