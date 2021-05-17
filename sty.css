@@ -71,7 +71,9 @@ hr {
 --------------------------------
 */
 
-
+#d2{
+  display: fixed;
+}
 
 #d2 .navbar{
   background-color:#dbdbd9;
